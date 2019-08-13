@@ -19,6 +19,8 @@ En este proyecto **construirás una _página web_ para visualizar un _conjunto (
 
 ## Objetivos de aprendizaje
 
+mi objetivo va enfocado en aprender sobre los temas de los objeto,array,for,if. familiarizarme con cada uno de ellos.
+
 El objetivo principal de este proyecto es que afiances tu aprendizaje practicando la planificación *Agile* utilizando *Scrum* con el fin de que logres, en el tiempo indicado, implementar una interfaz web donde se pueda visualizar y manipular data de los personajes del mundo de Harry Potter utilizando arreglos y objetos con JavaScript.
 
 Dicho en palabras sencillas, aprenderás:
