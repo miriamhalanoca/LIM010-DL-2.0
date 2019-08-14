@@ -1,10 +1,21 @@
 /* Manejo del DOM */
+/* Manejo del DOM */
 const data = document.getElementById('data');
-
-
-const datajson = () =>{ fetch('C:\Users\Laboratoria\Documents\proyecto\LIM010-DL-2.0\src\data');
-Promise.all(datajson).then(resultado => {
-  console.log(datajson)
-  elemt.innerHTML = datajson(resultado);
+const data1 = (fetch('https://raw.githubusercontent.com/miriamhalanoca/LIM010-DL-2.0/master/src/data/potter.json')
+.then(response => response.json()));
+Promise.all(data1)
+.then(resultado => {
+  console.log(resultado)
+  const urlspeli = (data) => {
+    let almacenar = '';
+    for (data in Object) {
+      let item = `
+        
+        
+           `
+      almacenar += item;
+    }
+    return almacenar;
+  };
+  elemt.innerHTML = urlspeli(resultado);
 });
-}
