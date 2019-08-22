@@ -7,47 +7,42 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="cuerpo">
-  <main id="menu" class="menu">
-    <aside  class="submenu">
-      <div id="logo" class="logo">
-        <img src="img/1.png" alt="">
+<body>
+  <main>
+    <section  class="menu">
+      <div id="logo" class="logo" >
+        <img class="logoPoter" src="img/2.png">
       </div>
+      <section class="submenu"> 
       <div id="Orden" class="Orden">
-        <p><strong>Ordenar por edad</strong></p>
-        <button id="ascendente" class="btn1"> Ascendente</button>
-        <br>
-        <button id="descendente" class="btn2"> Descendente</button>
+        <H1>Ordenar por edad</H1>
+        <button id="ascendente" class="btn1 icon-house"> Ascendente</button>
+        <button id="descendente" class="btn1"> Descendente</button>
       </div>
-      <br>
-      
        <div id="Filtrar" class="Filtrar">
-        <p>Filtrar por</p>
-        <select id="genero" class="Genero">
+      <H2>Filtrar Por</H2>
+        <select id="genero" class="seleccionar">
           <option>Genero</option>
           <option value="female">Femenino</option>
           <option value="male">Masculino</option>
         </select>
-        <br>
-        <select id="roles" class="Roles">
+        <select id="rol" class="seleccionar">
           <option>Rol</option>
           <option id="student" value="hogwartsStudent">Estudiante</option>
           <option id="staff" value="hogwartsStaff">Staff</option>
         </select>
-        <br>
-        <select id="casa" class="House">
+        <select id="casa" class="seleccionar">
           <option>Casa</option>
           <option value="Gryffindor">Gryffindor</option>
           <option value="Slytherin">Slytherin</option>
           <option value="Hufflepuff">Hufflepuff</option>
           <option value="Ravenclaw">Ravenclaw</option>
         </select>
+      </section>
       </div>
-    </aside>
+   </section>
     <section class="titulo">
-      <div class="title">
         <h1>Personajes de la Saga de Harry Potter</h1>
-      </div>
       <div id="data" class="personajes"></div>
     </section>
   </main>
