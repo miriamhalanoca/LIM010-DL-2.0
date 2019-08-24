@@ -2,25 +2,27 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
   <meta charset="utf-8">
   <title>Data Lover 2.0 Harry Potter</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
   <main>
-    <section  class="menu">
+    <header class="menu">
       <div id="logo" class="logo" >
         <img class="logoPoter" src="img/2.png">
       </div>
-      <section class="submenu"> 
       <div id="Orden" class="Orden">
         <H1>Ordenar por edad</H1>
         <button id="ascendente" class="btn1 icon-house"> Ascendente</button>
         <button id="descendente" class="btn1"> Descendente</button>
       </div>
        <div id="Filtrar" class="Filtrar">
-      <H2>Filtrar Por</H2>
+         <H2>Filtrar Por</H2>
         <select id="genero" class="seleccionar">
           <option>Genero</option>
           <option value="female">Femenino</option>
@@ -38,11 +40,10 @@
           <option value="Hufflepuff">Hufflepuff</option>
           <option value="Ravenclaw">Ravenclaw</option>
         </select>
-      </section>
       </div>
-   </section>
+  </header>
     <section class="titulo">
-        <h1>Personajes de la Saga de Harry Potter</h1>
+        <h3>Personajes de la Saga de Harry Potter</h3>
       <div id="data" class="personajes"></div>
     </section>
   </main>
