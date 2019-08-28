@@ -12,14 +12,11 @@
     display: flex;
     z-index: 1;
     color: white;
-    padding: 20px;
+    padding: 5px;
 }
-
-
 .submenu{
 
 color:white;
-
 text-align: center;
 }
 .logo{
@@ -30,14 +27,13 @@ text-align: center;
 .logoPoter{
     width: 80%;
    position: relative;
-   right: -8%;
-   
+   right: -8%;   
 }
 .btn1{
 background-color: rgba(92, 86, 86, 0.7);
 margin-bottom: 10%;
-width: 80%;
-height: 40px;
+width: 95%;
+/* height: 39px; */
 color:white;
 }
 .seleccionar{
@@ -53,7 +49,7 @@ color:white;
     color: black;
     margin: 2%;
     font-size: 93%;
-    /* margin-top: 280px; */
+    margin-top: 235px;
 }
 .personajes{
     margin-top: 5px;
@@ -61,17 +57,15 @@ color:white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: 31%;
-
-   
+    margin-right: 31%;   
 }
 .cards {
     background-color: rgba(252, 246, 246, 0.925);
-    width: 237px;
-    margin: 13px;
-    padding: 45px;
+    width: 233px;
+    margin: 6px;
+    padding: 40px;
     font-size: 18px;
-    border-radius: 21px;
+    border-radius: 9px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -81,12 +75,6 @@ color:white;
     background-position-y: 5%;
 
 }
-
-
-
-
-
-
 .text {
     align-items: center;
     justify-content: center;
@@ -126,6 +114,7 @@ color:white;
         width: 200px;
         height: 100%;
         flex-direction: column;
+       
     }
 .submenu{
         margin-top: 50%;
@@ -147,9 +136,7 @@ color:white;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-right: 13%;
-    
-       
+        margin-right: 13%;   
     }
     .cards {
         background-color: rgba(252, 246, 246, 0.925);
@@ -165,9 +152,7 @@ color:white;
         background-repeat: no-repeat;
         background-position-x: 95%;
         background-position-y: 5%;
-    
     }
-    
     .text {
         align-items: center;
         justify-content: center;
