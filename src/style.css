@@ -4,7 +4,6 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-/* @media (max-width:801px) */
 .menu {
     background-color: rgb(92, 86, 86);
     position:fixed;
@@ -30,18 +29,20 @@ text-align: center;
    right: -8%;   
 }
 .btn1{
-background-color: rgba(92, 86, 86, 0.7);
-margin-bottom: 10%;
-width: 95%;
-/* height: 39px; */
-color:white;
+    background-color: rgba(92, 86, 86, 0.7);
+    margin-bottom: 13%;
+    width: 81%;
+    color: white;
+    height: 47px;
+    margin-top: 7%;
 }
 .seleccionar{
-width: 80%;
-height: 40px;
-background-color: rgba(92, 86, 86, 0.7);
-margin-bottom: 10%;
-color:white;
+    width: 80%;
+    height: 30px;
+    background-color: rgba(92, 86, 86, 0.7);
+    margin-bottom: 10%;
+    color: white;
+    margin-top: 6%;
 }
 .titulo {
     float: right;
@@ -53,7 +54,6 @@ color:white;
 }
 .personajes{
     margin-top: 5px;
-    /* padding: 3em 0em; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -104,13 +104,13 @@ color:white;
 .orden{
     margin: 0px;
     padding: 0px;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; */
 }
 
  @media (min-width:801px){
 
-    .menu {
+.menu {
         width: 200px;
         height: 100%;
         flex-direction: column;
@@ -123,68 +123,21 @@ color:white;
     }
 
     .titulo {
-        float: right;
-        width: 71%;
-        color: black;
-        margin: 2%;
         font-size: 200%;
         margin-top: 31px;
     }
     .personajes{
-        margin-top: 0px;
         padding: 2em 1em ;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-right: 13%;
-        margin: -5%;   
+        justify-content: space-around; 
+        margin: -5%;  
+        margin-left: -15%;
+       
     }
     .cards {
         background-color: rgba(252, 246, 246, 0.925);
         width: 237px;
         margin: 13px;
         padding: 45px;
-        font-size: 18px;
-        border-radius: 21px;
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        background-image: url(../src/img/1.png);
-        background-repeat: no-repeat;
-        background-position-x: 95%;
-        background-position-y: 5%;
-    }
-    .text {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .texto {
-        margin-top: 0px;
-        align-items: left;
-        justify-content: left;
-        text-align: left;
-        box-sizing: border-box;
-    }
-    .cards-img {
-        margin:auto;
-        align-items: center;
-        position: relative;
-        width: 150px;
-        height: 150px;
-        overflow: hidden;
-        border-radius: 50%;
-    }
-    .cards-img img {
-        display: flex;
-        width: 103%;
-        height: 150%;
-    }
-    .orden{
-        margin: 0px;
-        padding: 0px;
-        font-family: 'Roboto', sans-serif;
-        box-sizing: border-box;
     }
     .btn1{
         background-color: rgba(92, 86, 86, 0.7);
@@ -192,5 +145,5 @@ color:white;
         width: 100%;
         height: 50px;
         color:white;
-        }
+        } 
 }

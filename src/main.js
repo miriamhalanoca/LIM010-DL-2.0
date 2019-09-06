@@ -1,32 +1,38 @@
 /* Manejo del DOM */
 const data = document.getElementById("data");
 const botonAscendente= document.getElementById("ASCENDENTE");
-
+const botondescendente = document.getElementById("DESCENDENTE");
+const botonDeGenero = document.getElementById("GENERO");
+const botonDeRol = document.getElementById("ROL");
+const botonDeCasa = document.getElementById("CASA");
 
 
 const dataAlmacenados = () => {
   fetch('https://raw.githubusercontent.com/Laboratoria/LIM009-DL-2.0/master/src/data/potter.json')
     .then(res => res.json())
     .then(resultado => {
-      mostrar(resultado);
-
-      console.log(resultado);
+      mostrarEnPantalla(resultado);
+      ascendenteOrden(resultado);
+      descendenteOrden (resultado);
+      BotonGenero(resultado);
+      BotonRol(resultado);
+      BotonCasa(resultado)
     });
-   
+  
 };
 dataAlmacenados();
 
-const mostrar = (datos) => {
+const mostrarEnPantalla = (datos) => {
   let almacenar = '';
   for (let i = 0; i < datos.length; i++) {
     almacenar += `
         <div class="cards">
         <figure class="cards-img">
         <img src= ${datos[i].image} />
-        </figure>
+         </figure>
         <div class="text"><p>${datos[i].name}</p>
         <p> ${datos[i].house ? datos[i].house : 'No tiene casa'}</p></div>
-        <div class="texto">
+         <div class="texto">
         <p>Especie</br>${datos[i].species}</p>
         <p> Rol</br>${datos[i].hogwartsStudent ? 'Estudiante' : 'Staff'}</p>
         `;
@@ -40,29 +46,60 @@ const mostrar = (datos) => {
       </div>`;
   }
   data.innerHTML = almacenar;
-  // console.log(datos);
 };
 
-const ascendente = (datos) => datos.sort((a, b) => {
-  if (a.yearOfBirth > b.yearOfBirth) {
-    return 1;
-  }
-  else {
+const ascendenteOrden = (datos) => {
+  botonAscendente.addEventListener('click', () => {
+    const ordenarascendente = ascendente(datos);
+    mostrarEnPantalla(ordenarascendente);
+  });
+};
 
-    return -1;
+const descendenteOrden = (datos) => {
+  botondescendente.addEventListener('click', () => {
+    const ordenardescendente = descendente(datos);
+    mostrarEnPantalla(ordenardescendente);
+  });
+};
+
+const BotonGenero = (datos) => {
+  botonDeGenero.addEventListener('change', (event) => {
+    const filtrarGenero1 = FiltrarGenero (datos,event.target.value);
+    mostrarEnPantalla(filtrarGenero1);
+  })
+}
+
+const BotonRol = (datos) => {
+  botonDeRol.addEventListener('change', (event) => {
+if(botonDeRol.value ===  "hogwartsStudent"){
+ const filtrarRol1 = FiltrarRolhogwartsStudent (datos, event.target.value );
+ mostrarEnPantalla(filtrarRol1);
+  }else if (botonDeRol.value === "hogwartsStaff"){
+    const filtrarRol2 = FiltrarRolhogwartsStaff (datos,event.target.value);
+mostrarEnPantalla(filtrarRol2);
   }
 });
-// const buscar = document.getElementById('buscar');
-// buscar.addEventListener('input', event => {
-//   const peliculasBuscada = busco (results.event.target.value.toLowerCase());
-//   pelicontenedor.innerHTML = urlspeli(peliculasBuscada);
-// });
+};
 
- botonAscendente.addEventListener('click', () => {
-const ordenar1 = ascendente(resultado);
-data.innerHTML=  mostrar(ordenar1);
 
-});
+const BotonCasa = (datos)=>{
+  botonDeCasa.addEventListener('change', ()=>{
+    const filtrarcasa = filtrarCasa(datos,event.target.value);
+    mostrarEnPantalla(filtrarcasa);
+  })
+}
 
-window.mostrar = mostrar;
-window.ascendente = ascendente;
+
+// const filterRol = (datos) => {
+//   rol.addEventListener('change', () => {
+//     if (rol.value === "hogwartsStudent") {
+//       const student = window.potter.filtrarRolStudent(datos, rol.value);
+//       paintAll(student);
+//     } else if (rol.value === "hogwartsStaff") {
+//       const staff = window.potter.filtrarRolStaff(datos, rol.value);
+//       paintAll(staff);
+//     }
+//   });
+//  };
+ 
+ 
