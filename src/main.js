@@ -90,16 +90,4 @@ const BotonCasa = (datos)=>{
 }
 
 
-// const filterRol = (datos) => {
-//   rol.addEventListener('change', () => {
-//     if (rol.value === "hogwartsStudent") {
-//       const student = window.potter.filtrarRolStudent(datos, rol.value);
-//       paintAll(student);
-//     } else if (rol.value === "hogwartsStaff") {
-//       const staff = window.potter.filtrarRolStaff(datos, rol.value);
-//       paintAll(staff);
-//     }
-//   });
-//  };
- 
  

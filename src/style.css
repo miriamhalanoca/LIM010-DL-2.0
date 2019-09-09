@@ -1,8 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
 }
 .menu {
     background-color: rgb(92, 86, 86);
@@ -20,7 +18,7 @@ text-align: center;
 }
 .logo{
  width: 200px;
-    margin-top: 10%;
+ margin-top: 10%;
 }
 
 .logoPoter{
@@ -104,11 +102,9 @@ text-align: center;
 .orden{
     margin: 0px;
     padding: 0px;
-    /* font-family: 'Roboto', sans-serif;
-    box-sizing: border-box; */
 }
 
- @media (min-width:801px){
+ @media (min-width:800px){
 
 .menu {
         width: 200px;
