@@ -76,7 +76,7 @@ text-align: center;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    /* color: white; */
 }
 .texto {
     margin-top: 0px;
@@ -84,7 +84,7 @@ text-align: center;
     justify-content: left;
     text-align: left;
     box-sizing: border-box;
-    color: white;   
+    /* color: white;    */
 }
 
 .cards-img {
@@ -133,7 +133,7 @@ text-align: center;
        
     }
     .cards {
-        background-color: rgba(252, 246, 246, 0.925);
+        background-color: rgba(238, 231, 231, 0.925);
         width: 237px;
         margin: 13px;
         padding: 45px;
@@ -145,4 +145,12 @@ text-align: center;
         height: 50px;
         color:white;
         } 
+        .text {
+          
+          color: black;
+      }
+      .texto {
+         
+          color: black;   
+      }
 }
