@@ -47,7 +47,7 @@ text-align: center;
     color: black;
     margin: 2%;
     font-size: 93%;
-    margin-top: 235px;
+    margin-top: 24px;
 }
 .personajes{
     margin-top: 5px;
@@ -57,7 +57,7 @@ text-align: center;
     margin-right: 31%;   
 }
 .cards {
-    background-color: rgba(252, 246, 246, 0.925);
+    background-color: rgba(85, 83, 83, 0.925);
     width: 233px;
     margin: 6px;
     padding: 40px;
@@ -68,14 +68,15 @@ text-align: center;
     box-sizing: border-box;
     background-image: url(../src/img/1.png);
     background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: 5%;
+    background-position-x: 92%;
+    background-position-y: 3%;
 
 }
 .text {
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: white;
 }
 .texto {
     margin-top: 0px;
@@ -83,7 +84,9 @@ text-align: center;
     justify-content: left;
     text-align: left;
     box-sizing: border-box;
+    color: white;   
 }
+
 .cards-img {
     margin:auto;
     align-items: center;
