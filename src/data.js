@@ -1,7 +1,5 @@
 /* Manejo de data */
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
 // esta funcion ejecuta la tarea del boton ascendente 
 const ascendente = (datos) =>
  datos.sort((a, b) => {
@@ -47,7 +45,7 @@ const FiltrarRolhogwartsStaff = (datos)  => {
 
 // esta funcion ejecuta para  el boton de desplazamiento de casa 
 const filtrarCasa = (datos, casa)=>{
-  const filtrarcasa= datos.filter(elemento=>elemento.house===casa);
+  const filtrarcasa= datos.filter(elemento=>elemento.house === casa);
   return filtrarcasa;
 }
 
